@@ -15,8 +15,10 @@ for number in range(1, 11):
     if user_answer == answer:
         user_points += 1
         if user_points == 10:
-            print(f'Congrats! You have {user_points} points.')
+            print('Congrats!')
 
     # if wrong answer, user gets no points and told what correct answer is
     else:
         print(f"Incorrect, the correct answer is {answer}.")
+
+print(f'Final score, you have {user_points} points.')
