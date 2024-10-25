@@ -6,7 +6,7 @@
 
 # list of info to get
 user_info_list = ['name', 'dob', 'address', 'phone number', 'email']
-user_info_dict = {}
+# user_info_dict = {}
 
 """
 # use a for loop to ask user questions and store info 
@@ -20,7 +20,7 @@ for key, value in user_info_dict.items():
 """
 
 # now turn them  into comprehesions to get extra practice
-comp_user_dict = {info: input(f'What is your {info}: ') for info in user_info_list}
+comp_user_dict = {info: input(f'What is your {info}: ').strip().capitalize() for info in user_info_list}
 
 print(comp_user_dict)
 
